@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+uapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ascii-live
@@ -44,7 +44,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: ascii.liven
+  - host: neptune.ascii
     http:
       paths:
       - path: /
